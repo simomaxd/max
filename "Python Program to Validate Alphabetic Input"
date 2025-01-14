@@ -1,0 +1,12 @@
+def get_alphabetic_input(prompt):
+    while True:
+        user_input = input(prompt)
+        # Check if all characters are alphabetic
+        if user_input.isalpha():
+            return user_input
+        else:
+            print("Invalid input! Please enter only alphabetic characters (A-Z, a-z).")
+
+# Example usage
+name = get_alphabetic_input("Enter your name (letters only): ")
+print(f"Hello, {name}!")
